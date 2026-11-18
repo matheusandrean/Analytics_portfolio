@@ -1,126 +1,75 @@
-<h1 align="center">Olá! 👋, Me chamo Matheus Marcondes</h1>
-<h3 align="center">Analista de Dados e Business Intelligence apaixonado por ciência de dados.</h3>
-<h3 align="center">Neste portfólio apresento projetos e estudos relacionados à Ciência de Dados.</h3>
+![Analytics Portfolio](assets/banner.svg)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/matmarcondes/" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn - Matheus Marcondes" height="60" width="80" />
-</a>
-</p>
+# Analytics Portfolio
 
-<hr/>
+**Matheus Marcondes · Cofundador da GovernandoAI**
 
-# Projetos
+Repositório central dos meus projetos em **Data Science, GenAI Engineering, Machine Learning, Data Governance e Financial Intelligence**. Reúne plataformas de crédito, estudos analíticos e a evolução planejada do Sentinel by GovernandoAI, com código, dados demonstrativos, documentação e critérios de avaliação no mesmo lugar.
 
-## Food Order Prediction
-<p><strong>Um projeto de Machine Learning para prever pedidos de alimentos e otimizar operações.</strong></p>
+[LinkedIn](https://www.linkedin.com/in/matmarcondes/) · [Perfil GitHub](https://github.com/matheusandrean) · [Documentação original](docs/README.legacy.md)
 
-### Importância para o Negócio
-<p>
-O modelo antecipa padrões de pedidos, ajudando restaurantes a planejarem estoque, reduzirem desperdícios e aumentarem a eficiência operacional.  
-Isso se traduz em <strong>melhor experiência para o cliente</strong> e <strong>maior rentabilidade</strong> para o negócio.
-</p>
+## Explore os projetos
 
-👉 <a href="https://github.com/matheusandrean/machine_learning_data_analysis/tree/main/ML/FoodOrderPrediction" target="_blank">Acesse o projeto no GitHub</a>
+| Projeto | Pergunta e escopo | Evidências disponíveis |
+| --- | --- | --- |
+| [Credit Intelligence AI](projects/credit-intelligence-ai/) | Plataforma de apoio à análise de crédito com ML, SHAP, GenAI, RAG, FastAPI e Streamlit | [Guia](projects/credit-intelligence-ai/README.pt-BR.md), [arquitetura](projects/credit-intelligence-ai/ARCHITECTURE.md), [governança](projects/credit-intelligence-ai/GOVERNANCE.pt-BR.md) |
+| [Credit Risk Intelligence Web](projects/credit-risk-intelligence-web/) | Dashboard estático de carteira, originação, risco e cobrança com dados sintéticos | [Guia e metodologia](projects/credit-risk-intelligence-web/README.md), [código](projects/credit-risk-intelligence-web/app.js), [agregados](projects/credit-risk-intelligence-web/assets/portfolio-data.json) |
+| [Risco de crédito · End-to-End](ML/risco_de_credito/) | Estudo de scoring, pipeline e disponibilização por API | [Documentação](ML/risco_de_credito/README.md), [treinamento](ML/risco_de_credito/scripts/train_export.py), [API](ML/risco_de_credito/api/main.py) |
+| [Credit Risk Analysis](ML/credit_risk_analysis/) | Estudo de classificação de risco de crédito | [Documentação](ML/credit_risk_analysis/README.md), [notebook](ML/credit_risk_analysis/Analise_de_credito/credit_risk_analysis.ipynb) |
+| [Análise de churn](ML/Analise_Churn/) | Exploração de cancelamento de clientes de telecomunicações | [Documentação](ML/Analise_Churn/README.md), [notebook](ML/Analise_Churn/Analise_de_Churn_o_Telco_Portfolio.ipynb) |
+| [Food Order Prediction](ML/FoodOrderPrediction/) | Estudo de recompra em serviços de alimentação | [Notebook](ML/FoodOrderPrediction/FoodOrderPrediction.ipynb), [contexto e fonte original](ML/FoodOrderPrediction/readme.txt) |
+| [Automação de relatórios](ML/Auto_email/) | Extração, geração de relatório e envio de e-mail | [Documentação](ML/Auto_email/README.md), [implementação](ML/Auto_email/main.py) |
 
----
+## Organização
 
-## Credit Risk Analysis
-<p><strong>Análise de risco de crédito utilizando dados do Statlog (German Credit Data).</strong></p>
+```text
+Analytics_portfolio/
+├── projects/
+│   ├── credit-intelligence-ai/        # Python, modelos, API, Streamlit e testes
+│   └── credit-risk-intelligence-web/  # HTML, CSS, JavaScript e dados sintéticos
+├── ML/                               # Estudos e aplicações existentes
+├── profile/                          # Fonte do README especial do perfil
+├── docs/                             # Identidade, migração e documentação histórica
+└── .github/workflows/                # CI dos projetos no repositório central
+```
 
-### Importância para o Negócio
-<p>
-O projeto calcula a probabilidade de inadimplência de clientes e apoia decisões estratégicas na concessão de crédito.  
-Implementei um pipeline completo: exploração inicial, pré-processamento, modelagem e avaliação preditiva.
-</p>
+[Detalhes da consolidação e origem dos arquivos](docs/CONSOLIDATION.md).
 
-### Principais Métricas do Modelo
-<ul>
-  <li><strong>Acurácia</strong>: 76%</li>
-  <li><strong>AUC-ROC</strong>: 0.81</li>
-  <li><strong>Precisão (Classe 1 - Risco)</strong>: 74%</li>
-  <li><strong>Recall (Classe 1 - Risco)</strong>: 71%</li>
-</ul>
+## Como avaliar e reproduzir
 
-### Resultados e Insights
-<ul>
-  <li>Variáveis como <em>Credit_amount</em>, <em>Duration_in_month</em> e <em>Age_in_years</em> tiveram maior peso na inadimplência.</li>
-  <li>O modelo contribui para <strong>reduzir perdas financeiras</strong> e <strong>otimizar políticas de crédito</strong>.</li>
-</ul>
+Clone o portfólio uma única vez:
 
-👉 <a href="https://github.com/matheusandrean/Analytics_portfolio/blob/main/ML/credit_risk_analysis/Analise_de_credito/credit_risk_analysis.ipynb" target="_blank">Acesse o projeto no GitHub</a>
+```bash
+git clone https://github.com/matheusandrean/Analytics_portfolio.git
+cd Analytics_portfolio
+```
 
----
+Para a plataforma Python, entre em `projects/credit-intelligence-ai` e siga o [guia de execução](projects/credit-intelligence-ai/README.pt-BR.md#como-executar). Para o dashboard, execute a partir da raiz:
 
-## Risco de Crédito · End-to-End
-<p><strong>Projeto completo de análise de risco de crédito usando o dataset UCI Credit Card.</strong></p>
+```bash
+python -m http.server 8000 --directory projects/credit-risk-intelligence-web
+```
 
-### Importância para o Negócio
-<p>
-Este projeto simula o fluxo real de uma instituição financeira: da solicitação de crédito até a decisão de aprovar, revisar ou negar.  
-A ideia central é calcular a <em>Probability of Default (PD)</em> e aplicar uma <strong>política de decisão</strong> clara e explicável.  
-Além disso, o modelo é disponibilizado via <strong>API FastAPI</strong> para uso em tempo real, com <strong>explicabilidade SHAP</strong> para justificar as decisões.
-</p>
+Acesse `http://localhost:8000`. A publicação central no GitHub Pages ainda não foi configurada.
 
-### O que foi feito
-<ul>
-  <li><strong>EDA</strong> com análise de distribuição do target e correlações.</li>
-  <li><strong>Modelagem</strong> com Logistic Regression, Decision Tree, Random Forest e XGBoost (selecionado).</li>
-  <li><strong>Métricas</strong>: AUC, F1, Recall e Precision.</li>
-  <li><strong>Export</strong> de resultados para dashboards no Power BI / Looker Studio.</li>
-  <li><strong>API</strong> de scoring em FastAPI (endpoints <code>/health</code>, <code>/docs</code> e <code>/score</code>).</li>
-</ul>
+Cada pasta tem contexto e dependências próprios. Comece pela documentação do projeto, examine os dados e execute o notebook ou script em um ambiente virtual separado. Não há um ambiente único nem uma suíte de testes que certifique todos os estudos deste repositório.
 
-👉 <a href="https://github.com/matheusandrean/Analytics_portfolio/tree/main/ML/risco_de_credito" target="_blank">Acesse o projeto no GitHub</a>
+Para o estudo de crédito com API, siga a preparação dos dados, o treinamento e a exportação de artefatos descritos no [guia específico](ML/risco_de_credito/README.md). Para automação de e-mails, revise as configurações e use um ambiente de teste antes de executar rotinas que enviam mensagens.
 
----
+## Resultados e limites
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-  <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-  <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/> </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a>
-  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
-  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-  <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a>
-  <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a>
-  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
-  <a href="https://www.databricks.com/br/glossary/pyspark" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/v2/resize:fit:600/0*mNyO-aa57qZ1PyJ7.jpg" alt="PySpark" width="90" height="90"/> </a>
-</p>
+As análises, saídas de notebooks e documentação técnica foram preservadas. As métricas do README anterior estão no [registro original](docs/README.legacy.md); não foram reexecutadas nesta reformulação e não devem ser interpretadas como desempenho atual validado. Benefícios de negócio apresentados nos estudos são hipóteses de aplicação, sem medição de impacto operacional neste portfólio.
 
-<hr/>
+Os estudos usam conjuntos de dados e metodologias distintos. A documentação de cada projeto é a referência para sua origem; este repositório não adota uma declaração única de dados sintéticos. Antes de comparar resultados, verifique divisão de dados, target, pré-processamento e protocolo de avaliação.
 
-<h2 align="left">💡 Por que estes projetos importam?</h2>
+## Sentinel by GovernandoAI
 
-<p>
-Todos os projetos deste portfólio foram pensados para mostrar não apenas habilidades técnicas em ciência de dados,
-mas principalmente a <strong>aplicação prática no mundo dos negócios</strong>.
-</p>
+A próxima fase será desenvolvida em `projects/sentinel/`, neste mesmo repositório. O escopo planejado integra Python, XGBoost, Isolation Forest, SHAP, qualidade e governança de dados, contratos, linhagem, auditoria, drift, FastAPI, Streamlit, testes e CI/CD. Usará dados sintéticos, validação temporal e métricas verificáveis; RAG, AML e GenAI fazem parte da evolução prevista.
 
-<ul>
-  <li>
-    <strong>Food Order Prediction</strong>: otimiza a gestão de estoque e reduz desperdícios em restaurantes,
-    garantindo mais eficiência operacional e aumento da margem de lucro.
-  </li>
-  <li>
-    <strong>Credit Risk Analysis</strong>: ajuda instituições financeiras a conceder crédito de forma mais segura,
-    equilibrando crescimento de carteira e redução da inadimplência.
-  </li>
-  <li>
-    <strong>Risco de Crédito · End-to-End</strong>: simula o fluxo real de aprovação de crédito em bancos e fintechs,
-    integrando <em>modelagem preditiva, explicabilidade e API</em> — mostrando como dados podem ser transformados
-    em <strong>decisões automatizadas</strong>.
-  </li>
-</ul>
+**Status: planejado.** A implementação antifraude e seus resultados ainda não foram produzidos. A pasta será criada quando o desenvolvimento começar.
 
-<p>
-👉 Dessa forma, cada case demonstra minha capacidade de unir <strong>ciência de dados + visão de negócio</strong>,
-sempre com foco em gerar valor real.
-</p>
+## Perfil e identidade
+
+O conteúdo do perfil é mantido em [profile/README.md](profile/README.md). O GitHub exige uma cópia no repositório especial `matheusandrean/matheusandrean` para exibi-lo na página do usuário; essa é a única exceção à centralização.
+
+A [identidade visual provisória](docs/VISUAL_IDENTITY.md) usa azul-marinho e ciano, até confirmação das cores oficiais da GovernandoAI.
